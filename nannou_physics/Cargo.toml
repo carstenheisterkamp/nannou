@@ -1,0 +1,17 @@
+[package]
+name = "nannou_physics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rapier2d = { version = "0.22", optional = true }
+rapier3d = { version = "0.22", optional = true }
+rapier2d-f64 = { version = "0.22", package = "rapier2d", optional = true }
+rapier3d-f64 = { version = "0.22", package = "rapier3d", optional = true }
+
+[features]
+default = ["rapier2d"]
+rapier2d = ["dep:rapier2d"]
+rapier3d = ["dep:rapier3d"]
+rapier2d-f64 = ["dep:rapier2d-f64"]
+rapier3d-f64 = ["dep:rapier3d-f64"]
