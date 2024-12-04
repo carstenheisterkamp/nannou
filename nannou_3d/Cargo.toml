@@ -6,4 +6,3 @@ edition = "2021"
 [dependencies]
 nannou_core = { path = "../nannou_core" }
 nannou_wgpu = { path = "../nannou_wgpu" }
-
